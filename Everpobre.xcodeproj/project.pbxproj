@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1080C821C8D86160014F0FB /* FJLCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1080C811C8D86160014F0FB /* FJLCoreDataTableViewController.m */; };
+		A1080C851C8D870F0014F0FB /* FJLNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1080C841C8D870F0014F0FB /* FJLNotebooksViewController.m */; };
+		A14C0A1A1C997D24006FFACB /* FJLNoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14C0A191C997D24006FFACB /* FJLNoteCollectionViewCell.xib */; };
+		A14C0A1D1C997E18006FFACB /* FJLNoteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C0A1C1C997E18006FFACB /* FJLNoteCellView.m */; };
+		A14C0A201C997F66006FFACB /* FJLCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C0A1F1C997F66006FFACB /* FJLCoreDataCollectionViewController.m */; };
+		A14C0A231C99801B006FFACB /* FJLNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C0A221C99801B006FFACB /* FJLNotesViewController.m */; };
+		A14C0A261C998A8C006FFACB /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A14C0A251C998A8C006FFACB /* noImage.png */; };
+		A14C0A561C9C0AF6006FFACB /* FJLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C0A541C9C0AF6006FFACB /* FJLNoteViewController.m */; };
+		A14C0A571C9C0AF6006FFACB /* FJLNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14C0A551C9C0AF6006FFACB /* FJLNoteViewController.xib */; };
+		A14C0A591C9C0E32006FFACB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C0A581C9C0E32006FFACB /* MapKit.framework */; };
+		A14C0A621CA55565006FFACB /* FJLPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C0A601CA55565006FFACB /* FJLPhotoViewController.m */; };
+		A14C0A631CA55565006FFACB /* FJLPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14C0A611CA55565006FFACB /* FJLPhotoViewController.xib */; };
+		A15BD5AB1C8EE9D800C7617B /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BD5AA1C8EE9D800C7617B /* UIViewController+Navigation.m */; };
+		A15BD5AE1C8F4DC800C7617B /* FJLNotebookCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15BD5AD1C8F4DC800C7617B /* FJLNotebookCellView.xib */; };
+		A15BD5B11C8F4F9000C7617B /* FJLNotebookCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BD5B01C8F4F9000C7617B /* FJLNotebookCellView.m */; };
+		A15BD5D71C934A5A00C7617B /* FJLNotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BD5D61C934A5A00C7617B /* FJLNotesTableViewController.m */; };
+		A17E0C081CB6E5F100A0B0A9 /* _FJLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A17E0C051CB6E5F100A0B0A9 /* _FJLLocation.m */; };
+		A17E0C091CB6E5F100A0B0A9 /* FJLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A17E0C071CB6E5F100A0B0A9 /* FJLLocation.m */; };
+		A17E0C0B1CB7A99400A0B0A9 /* placemark.png in Resources */ = {isa = PBXBuildFile; fileRef = A17E0C0A1CB7A99400A0B0A9 /* placemark.png */; };
+		A17E0C161CBD5A9B00A0B0A9 /* _FJLMapSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A17E0C131CBD5A9B00A0B0A9 /* _FJLMapSnapshot.m */; };
+		A17E0C171CBD5A9B00A0B0A9 /* FJLMapSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A17E0C151CBD5A9B00A0B0A9 /* FJLMapSnapshot.m */; };
+		A17E0C191CBD612700A0B0A9 /* noSnapshot.png in Resources */ = {isa = PBXBuildFile; fileRef = A17E0C181CBD612700A0B0A9 /* noSnapshot.png */; };
+		A17E0C1D1CBD67B900A0B0A9 /* FJLLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17E0C1B1CBD67B900A0B0A9 /* FJLLocationViewController.m */; };
+		A17E0C1E1CBD67B900A0B0A9 /* FJLLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17E0C1C1CBD67B900A0B0A9 /* FJLLocationViewController.xib */; };
+		A1B643B71C78721200F69191 /* _FJLNamedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643AC1C78721200F69191 /* _FJLNamedEntity.m */; };
+		A1B643B81C78721200F69191 /* _FJLNote.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643AE1C78721200F69191 /* _FJLNote.m */; };
+		A1B643B91C78721200F69191 /* _FJLNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643B01C78721200F69191 /* _FJLNotebook.m */; };
+		A1B643BA1C78721200F69191 /* FJLNamedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643B21C78721200F69191 /* FJLNamedEntity.m */; };
+		A1B643BB1C78721200F69191 /* FJLNote.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643B41C78721200F69191 /* FJLNote.m */; };
+		A1B643BC1C78721200F69191 /* FJLNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643B61C78721200F69191 /* FJLNotebook.m */; };
+		A1B643C11C787B2400F69191 /* _FJLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643BE1C787B2400F69191 /* _FJLPhoto.m */; };
+		A1B643C21C787B2400F69191 /* FJLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B643C01C787B2400F69191 /* FJLPhoto.m */; };
+		A1D0C13B1C76200B000EA1D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D0C13A1C76200B000EA1D0 /* main.m */; };
+		A1D0C13E1C76200B000EA1D0 /* FJLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D0C13D1C76200B000EA1D0 /* FJLAppDelegate.m */; };
+		A1D0C1401C76200B000EA1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D0C13F1C76200B000EA1D0 /* Assets.xcassets */; };
+		A1D0C14D1C762055000EA1D0 /* FJLSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D0C14C1C762055000EA1D0 /* FJLSimpleCoreDataStack.m */; };
+		A1D0C1531C76342A000EA1D0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D0C1511C76342A000EA1D0 /* Model.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1080C1D1C84BD2C0014F0FB /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		A1080C801C8D86160014F0FB /* FJLCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLCoreDataTableViewController.h; sourceTree = "<group>"; };
+		A1080C811C8D86160014F0FB /* FJLCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLCoreDataTableViewController.m; sourceTree = "<group>"; };
+		A1080C831C8D870F0014F0FB /* FJLNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNotebooksViewController.h; sourceTree = "<group>"; };
+		A1080C841C8D870F0014F0FB /* FJLNotebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNotebooksViewController.m; sourceTree = "<group>"; };
+		A14C0A191C997D24006FFACB /* FJLNoteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLNoteCollectionViewCell.xib; sourceTree = "<group>"; };
+		A14C0A1B1C997E18006FFACB /* FJLNoteCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNoteCellView.h; sourceTree = "<group>"; };
+		A14C0A1C1C997E18006FFACB /* FJLNoteCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNoteCellView.m; sourceTree = "<group>"; };
+		A14C0A1E1C997F66006FFACB /* FJLCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		A14C0A1F1C997F66006FFACB /* FJLCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLCoreDataCollectionViewController.m; sourceTree = "<group>"; };
+		A14C0A211C99801B006FFACB /* FJLNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNotesViewController.h; sourceTree = "<group>"; };
+		A14C0A221C99801B006FFACB /* FJLNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNotesViewController.m; sourceTree = "<group>"; };
+		A14C0A251C998A8C006FFACB /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
+		A14C0A531C9C0AF6006FFACB /* FJLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNoteViewController.h; sourceTree = "<group>"; };
+		A14C0A541C9C0AF6006FFACB /* FJLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNoteViewController.m; sourceTree = "<group>"; };
+		A14C0A551C9C0AF6006FFACB /* FJLNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLNoteViewController.xib; sourceTree = "<group>"; };
+		A14C0A581C9C0E32006FFACB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A14C0A5B1C9C2657006FFACB /* FJLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLDetailViewController.h; sourceTree = "<group>"; };
+		A14C0A5F1CA55565006FFACB /* FJLPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLPhotoViewController.h; sourceTree = "<group>"; };
+		A14C0A601CA55565006FFACB /* FJLPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLPhotoViewController.m; sourceTree = "<group>"; };
+		A14C0A611CA55565006FFACB /* FJLPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLPhotoViewController.xib; sourceTree = "<group>"; };
+		A15BD5A91C8EE9D800C7617B /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		A15BD5AA1C8EE9D800C7617B /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		A15BD5AD1C8F4DC800C7617B /* FJLNotebookCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLNotebookCellView.xib; sourceTree = "<group>"; };
+		A15BD5AF1C8F4F9000C7617B /* FJLNotebookCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNotebookCellView.h; sourceTree = "<group>"; };
+		A15BD5B01C8F4F9000C7617B /* FJLNotebookCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNotebookCellView.m; sourceTree = "<group>"; };
+		A15BD5D51C934A5A00C7617B /* FJLNotesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNotesTableViewController.h; sourceTree = "<group>"; };
+		A15BD5D61C934A5A00C7617B /* FJLNotesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNotesTableViewController.m; sourceTree = "<group>"; };
+		A17E0C031CB6E04500A0B0A9 /* Model2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model2.xcdatamodel; sourceTree = "<group>"; };
+		A17E0C041CB6E5F100A0B0A9 /* _FJLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FJLLocation.h; sourceTree = "<group>"; };
+		A17E0C051CB6E5F100A0B0A9 /* _FJLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FJLLocation.m; sourceTree = "<group>"; };
+		A17E0C061CB6E5F100A0B0A9 /* FJLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLLocation.h; sourceTree = "<group>"; };
+		A17E0C071CB6E5F100A0B0A9 /* FJLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLLocation.m; sourceTree = "<group>"; };
+		A17E0C0A1CB7A99400A0B0A9 /* placemark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placemark.png; sourceTree = "<group>"; };
+		A17E0C111CBD591000A0B0A9 /* Model3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model3.xcdatamodel; sourceTree = "<group>"; };
+		A17E0C121CBD5A9B00A0B0A9 /* _FJLMapSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FJLMapSnapshot.h; sourceTree = "<group>"; };
+		A17E0C131CBD5A9B00A0B0A9 /* _FJLMapSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FJLMapSnapshot.m; sourceTree = "<group>"; };
+		A17E0C141CBD5A9B00A0B0A9 /* FJLMapSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLMapSnapshot.h; sourceTree = "<group>"; };
+		A17E0C151CBD5A9B00A0B0A9 /* FJLMapSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLMapSnapshot.m; sourceTree = "<group>"; };
+		A17E0C181CBD612700A0B0A9 /* noSnapshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noSnapshot.png; sourceTree = "<group>"; };
+		A17E0C1A1CBD67B900A0B0A9 /* FJLLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLLocationViewController.h; sourceTree = "<group>"; };
+		A17E0C1B1CBD67B900A0B0A9 /* FJLLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLLocationViewController.m; sourceTree = "<group>"; };
+		A17E0C1C1CBD67B900A0B0A9 /* FJLLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLLocationViewController.xib; sourceTree = "<group>"; };
+		A1B643AB1C78721200F69191 /* _FJLNamedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FJLNamedEntity.h; sourceTree = "<group>"; };
+		A1B643AC1C78721200F69191 /* _FJLNamedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FJLNamedEntity.m; sourceTree = "<group>"; };
+		A1B643AD1C78721200F69191 /* _FJLNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FJLNote.h; sourceTree = "<group>"; };
+		A1B643AE1C78721200F69191 /* _FJLNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FJLNote.m; sourceTree = "<group>"; };
+		A1B643AF1C78721200F69191 /* _FJLNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FJLNotebook.h; sourceTree = "<group>"; };
+		A1B643B01C78721200F69191 /* _FJLNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FJLNotebook.m; sourceTree = "<group>"; };
+		A1B643B11C78721200F69191 /* FJLNamedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNamedEntity.h; sourceTree = "<group>"; };
+		A1B643B21C78721200F69191 /* FJLNamedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNamedEntity.m; sourceTree = "<group>"; };
+		A1B643B31C78721200F69191 /* FJLNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNote.h; sourceTree = "<group>"; };
+		A1B643B41C78721200F69191 /* FJLNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNote.m; sourceTree = "<group>"; };
+		A1B643B51C78721200F69191 /* FJLNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLNotebook.h; sourceTree = "<group>"; };
+		A1B643B61C78721200F69191 /* FJLNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLNotebook.m; sourceTree = "<group>"; };
+		A1B643BD1C787B2400F69191 /* _FJLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FJLPhoto.h; sourceTree = "<group>"; };
+		A1B643BE1C787B2400F69191 /* _FJLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FJLPhoto.m; sourceTree = "<group>"; };
+		A1B643BF1C787B2400F69191 /* FJLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLPhoto.h; sourceTree = "<group>"; };
+		A1B643C01C787B2400F69191 /* FJLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLPhoto.m; sourceTree = "<group>"; };
+		A1D0C1361C76200B000EA1D0 /* Everpobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everpobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D0C13A1C76200B000EA1D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1D0C13C1C76200B000EA1D0 /* FJLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJLAppDelegate.h; sourceTree = "<group>"; };
+		A1D0C13D1C76200B000EA1D0 /* FJLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJLAppDelegate.m; sourceTree = "<group>"; };
+		A1D0C13F1C76200B000EA1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1D0C1441C76200B000EA1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D0C14B1C762055000EA1D0 /* FJLSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLSimpleCoreDataStack.h; sourceTree = "<group>"; };
+		A1D0C14C1C762055000EA1D0 /* FJLSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLSimpleCoreDataStack.m; sourceTree = "<group>"; };
+		A1D0C1521C76342A000EA1D0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1D0C1331C76200B000EA1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14C0A591C9C0E32006FFACB /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1080C7F1C8D85D60014F0FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A14C0A1E1C997F66006FFACB /* FJLCoreDataCollectionViewController.h */,
+				A14C0A1F1C997F66006FFACB /* FJLCoreDataCollectionViewController.m */,
+				A1080C801C8D86160014F0FB /* FJLCoreDataTableViewController.h */,
+				A1080C811C8D86160014F0FB /* FJLCoreDataTableViewController.m */,
+				A1080C831C8D870F0014F0FB /* FJLNotebooksViewController.h */,
+				A1080C841C8D870F0014F0FB /* FJLNotebooksViewController.m */,
+				A15BD5D51C934A5A00C7617B /* FJLNotesTableViewController.h */,
+				A15BD5D61C934A5A00C7617B /* FJLNotesTableViewController.m */,
+				A14C0A211C99801B006FFACB /* FJLNotesViewController.h */,
+				A14C0A221C99801B006FFACB /* FJLNotesViewController.m */,
+				A14C0A531C9C0AF6006FFACB /* FJLNoteViewController.h */,
+				A14C0A541C9C0AF6006FFACB /* FJLNoteViewController.m */,
+				A14C0A551C9C0AF6006FFACB /* FJLNoteViewController.xib */,
+				A14C0A5F1CA55565006FFACB /* FJLPhotoViewController.h */,
+				A14C0A601CA55565006FFACB /* FJLPhotoViewController.m */,
+				A14C0A611CA55565006FFACB /* FJLPhotoViewController.xib */,
+				A17E0C1A1CBD67B900A0B0A9 /* FJLLocationViewController.h */,
+				A17E0C1B1CBD67B900A0B0A9 /* FJLLocationViewController.m */,
+				A17E0C1C1CBD67B900A0B0A9 /* FJLLocationViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A14C0A241C998A79006FFACB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A17E0C181CBD612700A0B0A9 /* noSnapshot.png */,
+				A17E0C0A1CB7A99400A0B0A9 /* placemark.png */,
+				A14C0A251C998A8C006FFACB /* noImage.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A14C0A5A1C9C260E006FFACB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A14C0A5B1C9C2657006FFACB /* FJLDetailViewController.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		A15BD5A81C8EE94A00C7617B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD5A91C8EE9D800C7617B /* UIViewController+Navigation.h */,
+				A15BD5AA1C8EE9D800C7617B /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A15BD5AC1C8F4D7000C7617B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD5AD1C8F4DC800C7617B /* FJLNotebookCellView.xib */,
+				A15BD5AF1C8F4F9000C7617B /* FJLNotebookCellView.h */,
+				A15BD5B01C8F4F9000C7617B /* FJLNotebookCellView.m */,
+				A14C0A191C997D24006FFACB /* FJLNoteCollectionViewCell.xib */,
+				A14C0A1B1C997E18006FFACB /* FJLNoteCellView.h */,
+				A14C0A1C1C997E18006FFACB /* FJLNoteCellView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A1D0C12D1C76200B000EA1D0 = {
+			isa = PBXGroup;
+			children = (
+				A14C0A581C9C0E32006FFACB /* MapKit.framework */,
+				A1D0C1381C76200B000EA1D0 /* Everpobre */,
+				A1D0C1371C76200B000EA1D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1D0C1371C76200B000EA1D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1D0C1361C76200B000EA1D0 /* Everpobre.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1D0C1381C76200B000EA1D0 /* Everpobre */ = {
+			isa = PBXGroup;
+			children = (
+				A14C0A5A1C9C260E006FFACB /* Protocols */,
+				A14C0A241C998A79006FFACB /* Resources */,
+				A15BD5AC1C8F4D7000C7617B /* Views */,
+				A15BD5A81C8EE94A00C7617B /* Categories */,
+				A1080C7F1C8D85D60014F0FB /* Controllers */,
+				A1D0C14A1C76201A000EA1D0 /* Models */,
+				A1D0C13C1C76200B000EA1D0 /* FJLAppDelegate.h */,
+				A1D0C13D1C76200B000EA1D0 /* FJLAppDelegate.m */,
+				A1D0C13F1C76200B000EA1D0 /* Assets.xcassets */,
+				A1D0C1391C76200B000EA1D0 /* Supporting Files */,
+				A1080C1D1C84BD2C0014F0FB /* Settings.h */,
+			);
+			path = Everpobre;
+			sourceTree = "<group>";
+		};
+		A1D0C1391C76200B000EA1D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1D0C1441C76200B000EA1D0 /* Info.plist */,
+				A1D0C13A1C76200B000EA1D0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D0C14A1C76201A000EA1D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A17E0C121CBD5A9B00A0B0A9 /* _FJLMapSnapshot.h */,
+				A17E0C131CBD5A9B00A0B0A9 /* _FJLMapSnapshot.m */,
+				A17E0C141CBD5A9B00A0B0A9 /* FJLMapSnapshot.h */,
+				A17E0C151CBD5A9B00A0B0A9 /* FJLMapSnapshot.m */,
+				A17E0C041CB6E5F100A0B0A9 /* _FJLLocation.h */,
+				A17E0C051CB6E5F100A0B0A9 /* _FJLLocation.m */,
+				A17E0C061CB6E5F100A0B0A9 /* FJLLocation.h */,
+				A17E0C071CB6E5F100A0B0A9 /* FJLLocation.m */,
+				A1B643BD1C787B2400F69191 /* _FJLPhoto.h */,
+				A1B643BE1C787B2400F69191 /* _FJLPhoto.m */,
+				A1B643AB1C78721200F69191 /* _FJLNamedEntity.h */,
+				A1B643AC1C78721200F69191 /* _FJLNamedEntity.m */,
+				A1B643AD1C78721200F69191 /* _FJLNote.h */,
+				A1B643AE1C78721200F69191 /* _FJLNote.m */,
+				A1B643AF1C78721200F69191 /* _FJLNotebook.h */,
+				A1B643B01C78721200F69191 /* _FJLNotebook.m */,
+				A1B643B11C78721200F69191 /* FJLNamedEntity.h */,
+				A1B643B21C78721200F69191 /* FJLNamedEntity.m */,
+				A1B643B31C78721200F69191 /* FJLNote.h */,
+				A1B643B41C78721200F69191 /* FJLNote.m */,
+				A1B643B51C78721200F69191 /* FJLNotebook.h */,
+				A1B643B61C78721200F69191 /* FJLNotebook.m */,
+				A1B643BF1C787B2400F69191 /* FJLPhoto.h */,
+				A1B643C01C787B2400F69191 /* FJLPhoto.m */,
+				A1D0C14B1C762055000EA1D0 /* FJLSimpleCoreDataStack.h */,
+				A1D0C14C1C762055000EA1D0 /* FJLSimpleCoreDataStack.m */,
+				A1D0C1511C76342A000EA1D0 /* Model.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1D0C1351C76200B000EA1D0 /* Everpobre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D0C1471C76200B000EA1D0 /* Build configuration list for PBXNativeTarget "Everpobre" */;
+			buildPhases = (
+				A1D0C1321C76200B000EA1D0 /* Sources */,
+				A1D0C1331C76200B000EA1D0 /* Frameworks */,
+				A1D0C1341C76200B000EA1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Everpobre;
+			productName = Everpobre;
+			productReference = A1D0C1361C76200B000EA1D0 /* Everpobre.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1D0C12E1C76200B000EA1D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Fran Lucena";
+				TargetAttributes = {
+					A1D0C1351C76200B000EA1D0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = ZJB52HYPRJ;
+					};
+				};
+			};
+			buildConfigurationList = A1D0C1311C76200B000EA1D0 /* Build configuration list for PBXProject "Everpobre" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1D0C12D1C76200B000EA1D0;
+			productRefGroup = A1D0C1371C76200B000EA1D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1D0C1351C76200B000EA1D0 /* Everpobre */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1D0C1341C76200B000EA1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14C0A631CA55565006FFACB /* FJLPhotoViewController.xib in Resources */,
+				A14C0A571C9C0AF6006FFACB /* FJLNoteViewController.xib in Resources */,
+				A15BD5AE1C8F4DC800C7617B /* FJLNotebookCellView.xib in Resources */,
+				A17E0C1E1CBD67B900A0B0A9 /* FJLLocationViewController.xib in Resources */,
+				A14C0A1A1C997D24006FFACB /* FJLNoteCollectionViewCell.xib in Resources */,
+				A14C0A261C998A8C006FFACB /* noImage.png in Resources */,
+				A17E0C0B1CB7A99400A0B0A9 /* placemark.png in Resources */,
+				A17E0C191CBD612700A0B0A9 /* noSnapshot.png in Resources */,
+				A1D0C1401C76200B000EA1D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1D0C1321C76200B000EA1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B643B71C78721200F69191 /* _FJLNamedEntity.m in Sources */,
+				A14C0A1D1C997E18006FFACB /* FJLNoteCellView.m in Sources */,
+				A1B643BC1C78721200F69191 /* FJLNotebook.m in Sources */,
+				A1080C851C8D870F0014F0FB /* FJLNotebooksViewController.m in Sources */,
+				A1B643BA1C78721200F69191 /* FJLNamedEntity.m in Sources */,
+				A17E0C1D1CBD67B900A0B0A9 /* FJLLocationViewController.m in Sources */,
+				A14C0A561C9C0AF6006FFACB /* FJLNoteViewController.m in Sources */,
+				A1B643B91C78721200F69191 /* _FJLNotebook.m in Sources */,
+				A15BD5D71C934A5A00C7617B /* FJLNotesTableViewController.m in Sources */,
+				A17E0C081CB6E5F100A0B0A9 /* _FJLLocation.m in Sources */,
+				A1D0C13E1C76200B000EA1D0 /* FJLAppDelegate.m in Sources */,
+				A15BD5AB1C8EE9D800C7617B /* UIViewController+Navigation.m in Sources */,
+				A1D0C13B1C76200B000EA1D0 /* main.m in Sources */,
+				A15BD5B11C8F4F9000C7617B /* FJLNotebookCellView.m in Sources */,
+				A17E0C161CBD5A9B00A0B0A9 /* _FJLMapSnapshot.m in Sources */,
+				A17E0C091CB6E5F100A0B0A9 /* FJLLocation.m in Sources */,
+				A14C0A621CA55565006FFACB /* FJLPhotoViewController.m in Sources */,
+				A14C0A231C99801B006FFACB /* FJLNotesViewController.m in Sources */,
+				A1D0C14D1C762055000EA1D0 /* FJLSimpleCoreDataStack.m in Sources */,
+				A14C0A201C997F66006FFACB /* FJLCoreDataCollectionViewController.m in Sources */,
+				A17E0C171CBD5A9B00A0B0A9 /* FJLMapSnapshot.m in Sources */,
+				A1B643B81C78721200F69191 /* _FJLNote.m in Sources */,
+				A1080C821C8D86160014F0FB /* FJLCoreDataTableViewController.m in Sources */,
+				A1D0C1531C76342A000EA1D0 /* Model.xcdatamodeld in Sources */,
+				A1B643C11C787B2400F69191 /* _FJLPhoto.m in Sources */,
+				A1B643BB1C78721200F69191 /* FJLNote.m in Sources */,
+				A1B643C21C787B2400F69191 /* FJLPhoto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1D0C1451C76200B000EA1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1D0C1461C76200B000EA1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1D0C1481C76200B000EA1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Everpobre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fran-lucena.Everpobre";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A1D0C1491C76200B000EA1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Everpobre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fran-lucena.Everpobre";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1D0C1311C76200B000EA1D0 /* Build configuration list for PBXProject "Everpobre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D0C1451C76200B000EA1D0 /* Debug */,
+				A1D0C1461C76200B000EA1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D0C1471C76200B000EA1D0 /* Build configuration list for PBXNativeTarget "Everpobre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D0C1481C76200B000EA1D0 /* Debug */,
+				A1D0C1491C76200B000EA1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1D0C1511C76342A000EA1D0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A17E0C111CBD591000A0B0A9 /* Model3.xcdatamodel */,
+				A17E0C031CB6E04500A0B0A9 /* Model2.xcdatamodel */,
+				A1D0C1521C76342A000EA1D0 /* Model.xcdatamodel */,
+			);
+			currentVersion = A17E0C111CBD591000A0B0A9 /* Model3.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A1D0C12E1C76200B000EA1D0 /* Project object */;
+}

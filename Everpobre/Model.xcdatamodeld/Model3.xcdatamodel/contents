@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="v3" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Location" representedClassName="FJLLocation" syncable="YES">
+        <attribute name="adress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <relationship name="mapsnapshot" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MapSnapshot" inverseName="location" inverseEntity="MapSnapshot" syncable="YES"/>
+        <relationship name="notes" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="location" inverseEntity="Note" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <entity name="MapSnapshot" representedClassName="FJLMapSnapshot" syncable="YES">
+        <attribute name="snapshotData" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="location" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="mapsnapshot" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="NamedEntity" representedClassName="FJLNamedEntity" syncable="YES">
+        <attribute name="creationDate" attributeType="Date" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="modificationDate" attributeType="Date" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="FJLNote" parentEntity="NamedEntity" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Location" inverseName="notes" inverseEntity="Location" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <relationship name="notebook" maxCount="1" deletionRule="Nullify" destinationEntity="Notebook" inverseName="notes" inverseEntity="Notebook" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Photo" inverseName="notes" inverseEntity="Photo" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <entity name="Notebook" representedClassName="FJLNotebook" parentEntity="NamedEntity" syncable="YES">
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Note" inverseName="notebook" inverseEntity="Note" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="FJLPhoto" syncable="YES">
+        <attribute name="imageData" attributeType="Binary" allowsExternalBinaryDataStorage="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <relationship name="notes" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="photo" inverseEntity="Note" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Location" positionX="-36" positionY="-27" width="128" height="120"/>
+        <element name="NamedEntity" positionX="-29" positionY="-180" width="128" height="88"/>
+        <element name="Note" positionX="-162" positionY="-0" width="128" height="105"/>
+        <element name="Notebook" positionX="88" positionY="-0" width="128" height="58"/>
+        <element name="Photo" positionX="-117" positionY="162" width="128" height="73"/>
+        <element name="MapSnapshot" positionX="-27" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>

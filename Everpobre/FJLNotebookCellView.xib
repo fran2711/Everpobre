@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rcz-wq-han" customClass="FJLNotebookCellView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rcz-wq-han" id="EZY-ow-zB8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewL-82-rGV">
+                        <rect key="frame" x="260" y="0.0" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31990026595744686" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ex-novias para el recuerdo de hace unos años" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfW-8Y-jIz">
+                        <rect key="frame" x="8" y="0.0" width="244" height="60"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="ewL-82-rGV" secondAttribute="trailing" constant="-8" id="2YB-6O-t1k"/>
+                    <constraint firstItem="dfW-8Y-jIz" firstAttribute="top" secondItem="EZY-ow-zB8" secondAttribute="topMargin" constant="-8" id="Bam-U3-OFx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dfW-8Y-jIz" secondAttribute="bottom" constant="-8.5" id="BlT-Rw-Zau"/>
+                    <constraint firstItem="ewL-82-rGV" firstAttribute="leading" secondItem="dfW-8Y-jIz" secondAttribute="trailing" constant="8" id="QPE-Xf-73h"/>
+                    <constraint firstItem="ewL-82-rGV" firstAttribute="top" secondItem="EZY-ow-zB8" secondAttribute="topMargin" constant="-8" id="Tow-R5-7h0"/>
+                    <constraint firstItem="dfW-8Y-jIz" firstAttribute="leading" secondItem="EZY-ow-zB8" secondAttribute="leadingMargin" id="cin-WD-f3J"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ewL-82-rGV" secondAttribute="bottom" constant="-8.5" id="ntF-R0-9sn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="namberOfNotesView" destination="ewL-82-rGV" id="tYK-rP-wgb"/>
+                <outlet property="nameView" destination="dfW-8Y-jIz" id="hGf-ms-gW6"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="156"/>
+        </tableViewCell>
+    </objects>
+</document>

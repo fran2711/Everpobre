@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FJLPhotoViewController">
+            <connections>
+                <outlet property="activityView" destination="zXn-Qk-WLM" id="p0d-QK-k0a"/>
+                <outlet property="photoView" destination="JJG-e0-UEm" id="6qZ-ES-jBR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-e0-UEm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="JJG-e0-UEm" secondAttribute="height" multiplier="80:131" id="yQ9-W3-KHR"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zXn-Qk-WLM">
+                    <rect key="frame" x="142" y="243" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zXn-Qk-WLM" secondAttribute="height" multiplier="1:1" id="RuX-az-uSl"/>
+                    </constraints>
+                </activityIndicatorView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drz-5f-DTM">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="drz-5f-DTM" secondAttribute="height" multiplier="80:11" id="Xs5-Vp-9fH"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="camera" id="Asc-z3-taY">
+                            <connections>
+                                <action selector="takePhoto:" destination="-1" id="RWQ-Ze-prG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vO7-HA-fd5"/>
+                        <barButtonItem title="Vintage" id="HD4-vZ-gGR">
+                            <connections>
+                                <action selector="applyVintageEffect:" destination="-1" id="KAm-5b-0tT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="R0C-ih-EXy"/>
+                        <barButtonItem title="Faces" id="h0r-5r-mAZ">
+                            <connections>
+                                <action selector="zoomToFace:" destination="-1" id="OFs-wp-x9a"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="e78-Gx-c0R"/>
+                        <barButtonItem systemItem="trash" id="EdQ-7T-too">
+                            <connections>
+                                <action selector="deletePhoto:" destination="-1" id="anZ-CI-eCJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="drz-5f-DTM" firstAttribute="top" secondItem="JJG-e0-UEm" secondAttribute="bottom" id="4Sj-h1-eb8"/>
+                <constraint firstItem="drz-5f-DTM" firstAttribute="top" secondItem="zXn-Qk-WLM" secondAttribute="bottom" constant="244" id="82k-B9-5fG"/>
+                <constraint firstAttribute="trailing" secondItem="zXn-Qk-WLM" secondAttribute="trailing" constant="141" id="Aul-8I-zOM"/>
+                <constraint firstItem="JJG-e0-UEm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BXh-Xo-6Bs"/>
+                <constraint firstAttribute="bottom" secondItem="drz-5f-DTM" secondAttribute="bottom" id="CYJ-ij-diF"/>
+                <constraint firstAttribute="trailing" secondItem="JJG-e0-UEm" secondAttribute="trailing" id="KEC-XL-A8e"/>
+                <constraint firstAttribute="trailing" secondItem="drz-5f-DTM" secondAttribute="trailing" id="QOi-eX-Rw8"/>
+                <constraint firstItem="JJG-e0-UEm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wpz-6D-9IT"/>
+                <constraint firstItem="zXn-Qk-WLM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="142" id="rPY-8M-ZT2"/>
+                <constraint firstItem="drz-5f-DTM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xEr-oR-1EA"/>
+                <constraint firstItem="zXn-Qk-WLM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="243" id="zOW-dE-fXu"/>
+            </constraints>
+            <point key="canvasLocation" x="226" y="307"/>
+        </view>
+    </objects>
+</document>
